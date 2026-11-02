@@ -16,7 +16,7 @@ layout: default
 </div>
 </div>
 
-<h2 class="section-title">论文</h2>
+<h2 class="section-title">Paper</h2>
 
 <ul class="paper-list">
   <li>
@@ -32,6 +32,8 @@ layout: default
 </ul>
 
 <h2 class="section-title">Blog</h2>
+
+<p>记录自己的学习过程和思考。</p>
 
 {% if site.posts.size == 0 %}
 <p style="opacity:.6">还没有文章,敬请期待。</p>
