@@ -11,7 +11,7 @@ layout: default
 
 目前在上海人工智能实验室安全基模中心实习,做内生安全 MoE 架构和 MoE 遗忘学习。
 
-我的 GitHub 是 [Jason-wx](https://github.com/Jason-wx)。
+我的 GitHub 是 [Jason-wx](https://github.com/Jason-wx),简历见[这里]({{ '/assets/resume.pdf' | relative_url }})。
 
 </div>
 </div>

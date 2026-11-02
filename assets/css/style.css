@@ -88,3 +88,6 @@ blockquote p:last-child{margin-bottom:0}
 .lang-switch a:hover{opacity:1;text-decoration:underline}
 .lang-switch a.active{opacity:1;font-weight:600;color:#e11d47}
 .lang-switch .sep{opacity:.35;margin:0 .35rem}
+
+/* inline SVG figures (rubric-grpo): light card background so they don't float on pure white */
+figure svg{background:#faf8f4;border:1px solid rgba(40,40,40,.08);border-radius:14px;padding:.75rem 1rem;box-shadow:0 8px 26px rgba(0,0,0,.045)}
