@@ -1,0 +1,13 @@
+title: "wx."
+description: "Jason's personal homepage and blog"
+url: "https://jason-wx.github.io"
+baseurl: ""
+author: "Jason"
+github_username: Jason-wx
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title/
+kramdown:
+  math_engine: null   # leave $$...$$ untouched for MathJax
+  input: GFM
+exclude: [README.md, Gemfile.lock, vendor]
