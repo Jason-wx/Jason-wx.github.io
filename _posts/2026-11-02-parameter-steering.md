@@ -1,7 +1,9 @@
 ---
 layout: post
 lang: en
-title: "Turning a Dial on a Model's Dangerous Direction"
+ref: parameter-steering
+list: false
+title: "Steering a Dangerous Parameter Direction: Where Safety Degradation Lives in the Model"
 subtitle: "On reversibility, hotspots, and why safety does not live in a single layer"
 ---
 

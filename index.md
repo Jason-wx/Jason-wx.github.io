@@ -39,12 +39,12 @@ layout: default
 <p style="opacity:.6">还没有文章,敬请期待。</p>
 {% else %}
 <ul class="post-list">
-{% for post in site.posts %}
+{% for post in site.posts %}{% if post.list != false %}
   <li><a href="{{ post.url | relative_url }}">
     <div class="pl-title">{{ post.title }}</div>
     <div class="pl-date">{{ post.date | date: "%Y-%m-%d" }}</div>
     {% if post.subtitle %}<div class="pl-sub">{{ post.subtitle }}</div>{% endif %}
   </a></li>
-{% endfor %}
+{% endif %}{% endfor %}
 </ul>
 {% endif %}

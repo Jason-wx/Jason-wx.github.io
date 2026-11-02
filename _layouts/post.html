@@ -7,7 +7,12 @@ layout: default
     <header class="post-header">
       <h1 class="title">{{ page.title }}</h1>
       {% if page.subtitle %}<h3><em>{{ page.subtitle }}</em></h3>{% endif %}
-      <div class="post-date">{{ page.date | date: "%B %-d, %Y" }}</div>
+      <div class="post-meta">
+        <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}</span>
+        {% if page.ref %}{% assign group = site.posts | where: "ref", page.ref | sort: "lang" | reverse %}{% if group.size > 1 %}
+        <span class="lang-switch">{% for p in group %}<a href="{{ p.url | relative_url }}"{% if p.lang == page.lang %} class="active" aria-current="true"{% endif %} hreflang="{{ p.lang }}">{% if p.lang == "zh" %}中文{% else %}EN{% endif %}</a>{% unless forloop.last %}<span class="sep">/</span>{% endunless %}{% endfor %}</span>
+        {% endif %}{% endif %}
+      </div>
     </header>
     {{ content }}
   </article>
